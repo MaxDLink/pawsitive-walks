@@ -55,7 +55,7 @@
                 <div class="hidden sm:flex space-x-6">
                     <a href="#portfolio" class="text-gray-600 hover:text-primary-blue transition duration-150 ease-in-out font-medium">Portfolio</a>
                     <a href="#reviews" class="text-gray-600 hover:text-primary-blue transition duration-150 ease-in-out font-medium">Reviews</a>
-                    <a href="#contact" class="text-white bg-accent-green hover:bg-emerald-600 px-4 py-2 rounded-lg font-medium transition duration-150 ease-in-out card-shadow">Contact Me</a>
+                    <a href="#contact" id="nav-contact-cta" class="text-white bg-accent-green hover:bg-emerald-600 px-4 py-2 rounded-lg font-medium transition duration-150 ease-in-out card-shadow">Contact Me</a>
                 </div>
                 <!-- Mobile Menu Button (Hamburger) -->
                 <button id="mobile-menu-btn" class="sm:hidden p-2 rounded-md text-gray-700 hover:text-primary-blue hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-blue" aria-label="Toggle menu">
@@ -65,9 +65,9 @@
         </div>
         <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden sm:hidden bg-white shadow-lg">
-            <a href="#portfolio" class="block px-4 py-3 text-gray-700 hover:bg-gray-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Portfolio</a>
-            <a href="#reviews" class="block px-4 py-3 text-gray-700 hover:bg-gray-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Reviews</a>
-            <a href="#contact" class="block px-4 py-3 text-white bg-accent-green hover:bg-emerald-600 transition duration-150 ease-in-out" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact Me</a>
+            <a href="#portfolio" id="mobile-portfolio-cta" class="block px-4 py-3 text-gray-700 hover:bg-gray-50">Portfolio</a>
+            <a href="#reviews" id="mobile-reviews-cta" class="block px-4 py-3 text-gray-700 hover:bg-gray-50">Reviews</a>
+            <a href="#contact" id="mobile-contact-cta" class="block px-4 py-3 text-white bg-accent-green hover:bg-emerald-600 transition duration-150 ease-in-out">Contact Me</a>
         </div>
     </nav>
 
@@ -79,20 +79,21 @@
                     Reliable, <span class="text-secondary-yellow">Joyful</span> Dog Walking
                 </h1>
                 <p class="text-xl text-indigo-200 mb-8 max-w-lg mx-auto lg:mx-0">
-                    Hi, I'm [Your Name]! I offer trustworthy and energetic walks, ensuring your best friend gets the exercise and care they deserve. Fully insured and background-checked.
+                    Hi, I'm Max Link! I offer trustworthy and energetic walks, ensuring your best friend gets the exercise and care they deserve. Fully insured and background-checked.
                 </p>
-                <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 border-2 border-secondary-yellow text-lg font-bold rounded-xl text-primary-blue bg-secondary-yellow hover:bg-amber-500 transition duration-300 ease-in-out card-shadow">
+                <!-- FIX: Added z-10 class to ensure the button is clickable above the background SVG wave -->
+                <a href="#contact" id="hero-cta" class="inline-flex items-center justify-center px-8 py-4 border-2 border-secondary-yellow text-lg font-bold rounded-xl text-primary-blue bg-secondary-yellow hover:bg-amber-500 transition duration-300 ease-in-out card-shadow relative z-10">
                     Book a Meet & Greet
                     <i data-lucide="chevrons-right" class="w-5 h-5 ml-2"></i>
                 </a>
             </div>
-            <!-- Mock Image Placeholder for Visual Appeal -->
+            <!-- Max Link Profile Picture -->
             <div class="mt-12 lg:mt-0 lg:w-1/2 flex justify-center">
-                <img src="https://placehold.co/400x400/fff3e0/fbbF24?text=Happy+Dog+%26+Walker" alt="A happy dog walker with a golden retriever" class="rounded-full object-cover w-64 h-64 sm:w-80 sm:h-80 card-shadow border-4 border-white transform hover:scale-105 transition duration-500 ease-in-out">
+                <img src="max.jpg" alt="Max Link, Professional Dog Walker" class="rounded-full object-cover w-64 h-64 sm:w-80 sm:h-80 card-shadow border-4 border-white transform hover:scale-105 transition duration-500 ease-in-out">
             </div>
         </div>
         <!-- Abstract background shape -->
-        <svg class="absolute bottom-0 left-0 w-full h-auto text-white transform translate-y-px" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="absolute bottom-0 left-0 w-full h-auto text-white transform translate-y-px" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2900/svg">
             <path d="M0 100H1440V0C1440 0 1104 100 720 100C336 100 0 0 0 0V100Z" fill="currentColor"/>
         </svg>
     </header>
@@ -106,28 +107,28 @@
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Dog 1: Cooper -->
+                <!-- Dog 1: Buddy -->
                 <div class="bg-white rounded-xl overflow-hidden card-shadow p-6 transition duration-300 hover:scale-[1.02]">
-                    <img src="https://placehold.co/300x300/e0f2fe/4F46E5?text=Cooper+(Lab)" onerror="this.onerror=null; this.src='https://placehold.co/300x300/e0f2fe/4F46E5?text=Cooper';" alt="Cooper the Labrador" class="w-full h-64 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-bold text-text-dark mb-2">Cooper the Energetic Lab</h3>
+                    <img src="https://placehold.co/300x300/e0f2fe/4F46E5?text=Buddy+(Lab)" onerror="this.onerror=null; this.src='https://placehold.co/300x300/e0f2fe/4F46E5?text=Buddy';" alt="Buddy the Labrador" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold text-text-dark mb-2">Buddy the Energetic Lab</h3>
                     <span class="inline-block bg-primary-blue/10 text-primary-blue text-xs font-semibold px-3 py-1 rounded-full">3 Walks/Week</span>
-                    <p class="text-gray-500 mt-3">Cooper loves long trail walks and chasing squirrels. We always focus on leash manners during our adventures.</p>
+                    <p class="text-gray-500 mt-3">Buddy loves long trail walks and chasing squirrels. We always focus on leash manners during our adventures.</p>
                 </div>
 
-                <!-- Dog 2: Luna -->
+                <!-- Dog 2: Bodie -->
                 <div class="bg-white rounded-xl overflow-hidden card-shadow p-6 transition duration-300 hover:scale-[1.02]">
-                    <img src="https://placehold.co/300x300/fefce8/FBBF24?text=Luna+(Pug)" onerror="this.onerror=null; this.src='https://placehold.co/300x300/fefce8/FBBF24?text=Luna';" alt="Luna the Pug" class="w-full h-64 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-bold text-text-dark mb-2">Luna the Friendly Pug</h3>
+                    <img src="https://placehold.co/300x300/fefce8/FBBF24?text=Bodie+(Pug)" onerror="this.onerror=null; this.src='https://placehold.co/300x300/fefce8/FBBF24?text=Bodie';" alt="Bodie the Pug" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold text-text-dark mb-2">Bodie the Friendly Pug</h3>
                     <span class="inline-block bg-secondary-yellow/20 text-text-dark text-xs font-semibold px-3 py-1 rounded-full">Daily Short Walks</span>
-                    <p class="text-gray-500 mt-3">Luna is an older girl who prefers a leisurely stroll and a lot of belly rubs. Perfect pace for her comfort.</p>
+                    <p class="text-gray-500 mt-3">Bodie is an older girl who prefers a leisurely stroll and a lot of belly rubs. Perfect pace for her comfort.</p>
                 </div>
 
-                <!-- Dog 3: Shadow -->
+                <!-- Dog 3: Nola -->
                 <div class="bg-white rounded-xl overflow-hidden card-shadow p-6 transition duration-300 hover:scale-[1.02]">
-                    <img src="https://placehold.co/300x300/d1fae5/10B981?text=Shadow+(GSD)" onerror="this.onerror=null; this.src='https://placehold.co/300x300/d1fae5/10B981?text=Shadow';" alt="Shadow the German Shepherd" class="w-full h-64 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-bold text-text-dark mb-2">Shadow the Guard Dog</h3>
+                    <img src="https://placehold.co/300x300/d1fae5/10B981?text=Nola+(GSD)" onerror="this.onerror=null; this.src='https://placehold.co/300x300/d1fae5/10B981?text=Nola';" alt="Nola the German Shepherd" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold text-text-dark mb-2">Nola the Guard Dog</h3>
                     <span class="inline-block bg-accent-green/10 text-accent-green text-xs font-semibold px-3 py-1 rounded-full">Focused Training</span>
-                    <p class="text-gray-500 mt-3">Shadow needs specialized attention. We focus on reinforcement and consistent boundary training during every walk.</p>
+                    <p class="text-gray-500 mt-3">Nola needs specialized attention. We focus on reinforcement and consistent boundary training during every walk.</p>
                 </div>
             </div>
         </div>
@@ -152,7 +153,7 @@
                         <i data-lucide="star" class="w-5 h-5 fill-secondary-yellow"></i>
                     </div>
                     <blockquote class="text-gray-700 italic text-xl">
-                        "[Your Name] is truly the best! Our Beagle, Penny, comes home exhausted and happy every single time. They are reliable, flexible, and I trust them completely with our home and pet."
+                        "Max Link is truly the best! Our Beagle, Penny, comes home exhausted and happy every single time. They are reliable, flexible, and I trust them completely with our home and pet."
                     </blockquote>
                     <p class="mt-4 font-semibold text-text-dark">— Sarah J. (Owner of Penny)</p>
                 </div>
@@ -167,7 +168,7 @@
                         <i data-lucide="star" class="w-5 h-5 fill-secondary-yellow"></i>
                     </div>
                     <blockquote class="text-gray-700 italic text-xl">
-                        "I highly recommend Pawsitive Walks! My German Shepherd, Rex, has some anxiety, but [Your Name] handles him with such confidence and kindness. It's a huge relief."
+                        "I highly recommend Pawsitive Walks! My German Shepherd, Rex, has some anxiety, but Max Link handles him with such confidence and kindness. It's a huge relief."
                     </blockquote>
                     <p class="mt-4 font-semibold text-text-dark">— Michael D. (Owner of Rex)</p>
                 </div>
@@ -184,9 +185,16 @@
             </p>
 
             <div class="bg-white p-6 sm:p-10 rounded-2xl card-shadow border border-gray-100 grid grid-cols-1 lg:grid-cols-2 gap-10">
-                <!-- Contact Form -->
+                <!-- Contact Form: Now using FormSubmit for live email delivery -->
                 <div>
-                    <form id="contact-form" class="space-y-6">
+                    <!-- The form action is set up for live submissions via FormSubmit.co -->
+                    <form action="https://formsubmit.co/pawsitive.walks.today@gmail.com" method="POST" class="space-y-6">
+                        <!-- Hidden field to define the subject line of the email you receive -->
+                        <input type="hidden" name="_subject" value="NEW Dog Walk Request from Website - Max Link">
+                        
+                        <!-- The following line removes FormSubmit's default "Powered by FormSubmit" message, which is good for professionalism -->
+                        <input type="hidden" name="_template" value="box">
+
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
                             <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-blue transition duration-150" placeholder="Jane Doe">
@@ -199,15 +207,11 @@
                             <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Dog's Name & Walk Needs</label>
                             <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-blue transition duration-150" placeholder="My dog's name is Buddy (a Beagle). We need walks every Mon, Wed, Fri afternoon."></textarea>
                         </div>
-                        <button type="submit" id="submit-btn" class="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-bold rounded-lg text-white bg-primary-blue hover:bg-indigo-700 transition duration-300 ease-in-out card-shadow">
+                        <button type="submit" class="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-bold rounded-lg text-white bg-primary-blue hover:bg-indigo-700 transition duration-300 ease-in-out card-shadow">
                             Send Request
                             <i data-lucide="send" class="w-4 h-4 ml-2"></i>
                         </button>
                     </form>
-                    <!-- Message Box for Success/Error -->
-                    <div id="message-box" class="mt-4 p-4 rounded-lg bg-accent-green/10 text-accent-green font-medium hidden">
-                        Thank you! Your request has been received. I'll get back to you shortly!
-                    </div>
                 </div>
 
                 <!-- Contact Details Card -->
@@ -218,7 +222,7 @@
                         <i data-lucide="user" class="w-6 h-6 text-primary-blue flex-shrink-0 mt-1 mr-3"></i>
                         <div>
                             <p class="text-sm font-semibold text-gray-500">Name</p>
-                            <p class="text-lg font-medium text-text-dark">[Your Full Name]</p>
+                            <p class="text-lg font-medium text-text-dark">Max Link</p>
                         </div>
                     </div>
 
@@ -226,7 +230,7 @@
                         <i data-lucide="map-pin" class="w-6 h-6 text-primary-blue flex-shrink-0 mt-1 mr-3"></i>
                         <div>
                             <p class="text-sm font-semibold text-gray-500">Service Area</p>
-                            <p class="text-lg font-medium text-text-dark">[Your City / Neighborhood]</p>
+                            <p class="text-lg font-medium text-text-dark">Lakewood Area</p>
                         </div>
                     </div>
                     
@@ -234,7 +238,7 @@
                         <i data-lucide="mail" class="w-6 h-6 text-primary-blue flex-shrink-0 mt-1 mr-3"></i>
                         <div>
                             <p class="text-sm font-semibold text-gray-500">Email</p>
-                            <a href="mailto:your.email@example.com" class="text-lg font-medium text-primary-blue hover:text-indigo-700 transition duration-150">[your.email@example.com]</a>
+                            <a href="mailto:pawsitive.walks.today@gmail.com" class="text-lg font-medium text-primary-blue hover:text-indigo-700 transition duration-150">pawsitive.walks.today@gmail.com</a>
                         </div>
                     </div>
 
@@ -242,7 +246,7 @@
                         <i data-lucide="phone" class="w-6 h-6 text-primary-blue flex-shrink-0 mt-1 mr-3"></i>
                         <div>
                             <p class="text-sm font-semibold text-gray-500">Phone</p>
-                            <a href="tel:555-555-5555" class="text-lg font-medium text-text-dark hover:text-primary-blue transition duration-150">[555-555-5555]</a>
+                            <a href="tel:214-957-1955" class="text-lg font-medium text-text-dark hover:text-primary-blue transition duration-150">214-957-1955</a>
                         </div>
                     </div>
 
@@ -261,9 +265,17 @@
     </footer>
 
     <script>
+        // Smooth scroll utility function
+        function smoothScrollTo(targetId) {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
         // Use window.onload to ensure all external scripts (like Lucide module) are fully loaded
         window.onload = function() {
-            // Initialize Lucide icons (Fixes ReferenceError: lucide is not defined)
+            // Initialize Lucide icons
             lucide.createIcons();
 
             // Dynamically set the current year in the footer
@@ -274,40 +286,55 @@
                 const menu = document.getElementById('mobile-menu');
                 menu.classList.toggle('hidden');
             });
+            
+            // 2. Attach Smooth Scroll to Hero CTA Button (Book a Meet & Greet)
+            const heroCta = document.getElementById('hero-cta');
+            if (heroCta) {
+                heroCta.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    // Manually scroll to the 'contact' section
+                    smoothScrollTo('contact');
+                });
+            }
 
-            // 2. Simple Contact Form Simulation
-            // Since we can't send a real email without a backend service, this simulates success.
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent actual form submission
+            // 3. Attach Smooth Scroll to 'Contact Me' button in the desktop navigation
+            const navContactCta = document.getElementById('nav-contact-cta'); // Targeted element via new ID
+            if (navContactCta) {
+                navContactCta.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    smoothScrollTo('contact');
+                });
+            }
 
-                const form = event.target;
-                const submitBtn = document.getElementById('submit-btn');
-                const messageBox = document.getElementById('message-box');
+            // 4. Attach Smooth Scroll to 'Contact Me' button in the mobile menu
+            const mobileContactCta = document.getElementById('mobile-contact-cta'); // Targeted element via new ID
+            if (mobileContactCta) {
+                mobileContactCta.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    smoothScrollTo('contact');
+                    // Close the mobile menu after clicking
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                });
+            }
 
-                // Simple loading simulation
-                submitBtn.textContent = 'Sending...';
-                submitBtn.disabled = true;
-                submitBtn.classList.remove('bg-primary-blue', 'hover:bg-indigo-700');
-                submitBtn.classList.add('bg-gray-400', 'cursor-not-allowed');
-
-                setTimeout(() => {
-                    // Display success message
-                    messageBox.classList.remove('hidden');
-                    form.reset(); // Clear the form fields
-
-                    // Reset button after a delay
-                    submitBtn.textContent = 'Send Request';
-                    submitBtn.disabled = false;
-                    submitBtn.classList.remove('bg-gray-400', 'cursor-not-allowed');
-                    submitBtn.classList.add('bg-primary-blue', 'hover:bg-indigo-700');
-
-                    // Auto-hide message box after 5 seconds
-                    setTimeout(() => {
-                        messageBox.classList.add('hidden');
-                    }, 5000);
-
-                }, 1500); // Simulate API delay
-            });
+            // 5. Attach Smooth Scroll to 'Portfolio' and 'Reviews' links in the mobile menu for consistency
+            const mobilePortfolioCta = document.getElementById('mobile-portfolio-cta');
+            if (mobilePortfolioCta) {
+                mobilePortfolioCta.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    smoothScrollTo('portfolio');
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                });
+            }
+            
+            const mobileReviewsCta = document.getElementById('mobile-reviews-cta');
+            if (mobileReviewsCta) {
+                mobileReviewsCta.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    smoothScrollTo('reviews');
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                });
+            }
         };
     </script>
 </body>
